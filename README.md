@@ -8,21 +8,18 @@ I did so as I changed the instruction set I didn't to completely rebulid the ass
 
  
 
-The syntax is now: 
-XX: starts generation of instruction
-op: 0xnn ; the start of an instruction the semi colon finish the line all valid lines must have a semi colon.
- I have used c++ style quotes for comments as a semi colon on it own now is a syntax error.
-end:; end the instruction build sequenance code 
-ram[pc]->REGA gets dat from ram using the PC and plce in REG(A)
-pc(inc) this increaments the PC counter this will be extend to mar and sp in the up comming redesign.
-The target of -> can be any of the following;
-A register including the temp, mar[lsb],mar[msb],pc[lsb] and so on. 
-these define the makeup of the instruction word 
+> The syntax is now: 
+> XX: starts generation of instruction
+> op: 0xnn ; the start of an instruction the semi colon finish the line all valid lines must have a semi colon.
+>  I have used c++ style quotes for comments as a semi colon on it own now is a syntax error.
+> end:; end the instruction build sequenance code 
+> ram[pc]->REGA gets dat from ram using the PC and plce in REG(A)
+> pc(inc) this increaments the PC counter this will be extend to mar and sp in the up comming redesign.
+> The target of -> can be any of the following;
+> A register including the temp, mar[lsb],mar[msb],pc[lsb] and so on. 
+> these define the makeup of the instruction word 
 
 ```c
-
-```
-
 struct inst_word {
 				int Sreg_code 	: 4	; //bit 0-3 
 				int Dreg_code	: 4 ; //Bit 4-7
@@ -42,8 +39,7 @@ struct inst_word {
 				int dec_sp		: 1 ; //Bit 30 Decrements selected register
 				int _AorD    	: 1 ; //Bit 31 // Select A or d register set to ALU
 			};
-
 ```
 
-```
+
 
