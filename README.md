@@ -10,7 +10,7 @@ I did this so as I change the instruction set I do not have to completely rebuil
 
 [TOC]
 
-###  The syntax is now   
+###  The basic syntax    
 
    **XX:** starts generation of instruction   
    **op: 0xnn ;** the start of an instruction the semi colon finish the line all valid lines must have a semi colon.  
