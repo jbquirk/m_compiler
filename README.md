@@ -8,7 +8,6 @@ I did so as I changed the instruction set I didn't to completely rebulid the ass
 
  
 
-
 The syntax is now: 
 XX: starts generation of instruction
 op: 0xnn ; the start of an instruction the semi colon finish the line all valid lines must have a semi colon.
@@ -19,6 +18,10 @@ pc(inc) this increaments the PC counter this will be extend to mar and sp in the
 The target of -> can be any of the following;
 A register including the temp, mar[lsb],mar[msb],pc[lsb] and so on. 
 these define the makeup of the instruction word 
+
+```c
+
+```
 
 struct inst_word {
 				int Sreg_code 	: 4	; //bit 0-3 
@@ -39,3 +42,8 @@ struct inst_word {
 				int dec_sp		: 1 ; //Bit 30 Decrements selected register
 				int _AorD    	: 1 ; //Bit 31 // Select A or d register set to ALU
 			};
+
+```
+
+```
+
