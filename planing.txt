@@ -1,0 +1,4 @@
+Suggested micro code Macro's
+ram->N	;to reg N EN_REG,RAM,WN
+N->RAM  ;Reg N to RAM EN_REG,(N), Wram
+INC N   ; 

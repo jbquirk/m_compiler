@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings version="1.0">
+	<category name="Debugger">
+		<category name="Watches">
+			<property name="Watch1" type="string">tok_line</property>
+			<property name="Watch2" type="string">index</property>
+			<property name="Watch3" type="string">m_state</property>
+			<property name="Watch4" type="string">tok_line[s.index]</property>
+			<property name="Watch5" type="string">flag_act</property>
+			<property name="Watch6" type="string">flag_def</property>
+			<property name="Watch7" type="string">flagcode</property>
+		</category>
+	</category>
+	<category name="micro-code-compiler.h">
+		<category name="Window">
+			<property name="Left" type="integer">183</property>
+			<property name="Top" type="integer">183</property>
+			<property name="Right" type="integer">2599</property>
+			<property name="Bottom" type="integer">1372</property>
+			<property name="Maximized" type="integer">0</property>
+			<property name="Active" type="integer">0</property>
+		</category>
+	</category>
+	<category name="main.c">
+		<category name="Window">
+			<property name="Left" type="integer">244</property>
+			<property name="Top" type="integer">244</property>
+			<property name="Right" type="integer">2660</property>
+			<property name="Bottom" type="integer">1433</property>
+			<property name="Maximized" type="integer">0</property>
+			<property name="Active" type="integer">0</property>
+		</category>
+		<category name="Breakpoints">
+			<category name="Breakpoint1">
+				<property name="Line" type="integer">353</property>
+				<property name="Enabled" type="integer">0</property>
+				<property name="HitCount" type="integer">0</property>
+				<property name="Expression" type="string"></property>
+			</category>
+		</category>
+	</category>
+	<category name="parser.c">
+		<category name="Window">
+			<property name="Left" type="integer">305</property>
+			<property name="Top" type="integer">305</property>
+			<property name="Right" type="integer">2721</property>
+			<property name="Bottom" type="integer">1494</property>
+			<property name="Maximized" type="integer">0</property>
+			<property name="Active" type="integer">0</property>
+		</category>
+	</category>
+</settings>
