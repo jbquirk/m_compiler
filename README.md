@@ -5,10 +5,20 @@ This complier is an attempt to make generating the micro code for MyCpu less err
 buggy but does produce correct micro code. I rewrote the assembler and it's much nicer with lots of room to grow.
 The assembler takes the processed output from the micro code compiler to generate the tables for the assembler.
 I did this so as I change the instruction set I do not have to completely rebuilt the assembler.
+- [m_compiler](#m-compiler)
+  * [_A micro code complier for MyCpu a TTL based 8 bit CPU._](#-a-micro-code-complier-for-mycpu-a-ttl-based-8-bit-cpu-)
+    + [The basic syntax](#the-basic-syntax)
+    + [Read select codes](#read-select-codes)
+      - [Table 2  W_SEL bits](#table-2--w-sel-bits)
+    + [Table 3 Address bus selection](#table-3-address-bus-selection)
+    + [Table 4 the ALU codes](#table-4-the-alu-codes)
+    + [Flags mux for micro code logic](#flags-mux-for-micro-code-logic)
+      - [Destination Reg codes](#destination-reg-codes)
+    + [Detailed syntax of complier and usage](#detailed-syntax-of-complier-and-usage)
+      - [TODO](#todo)
 
- 
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-[TOC]
 
 ###  The basic syntax    
 
