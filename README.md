@@ -7,6 +7,8 @@ The assembler takes the processed output from the micro code compiler to generat
 I did this so as I change the instruction set I do not have to completely rebuilt the assembler.
 This docuement by its nature will reffer to the architecture of the MyCpu as it is the mirco code builder/compiler for this cpu.
 The output is current a very basic hex format the [digital]: https://github.com/hneemann/Digital simulator. 
+I will keep the parts of this project seperate as the assembler and table bulider can be used for other 8 bit processors.
+The assembler is at a very basic stage but it has room to grow.
 
 - [m_compiler](#m-compiler)
   * [_A micro code complier for MyCpu a TTL based 8 bit CPU._](#-a-micro-code-complier-for-mycpu-a-ttl-based-8-bit-cpu-)
