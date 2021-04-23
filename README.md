@@ -59,11 +59,7 @@ struct inst_word {
 
 This a dynamic thing and is not yet complete for example the MyCpu current doesn't yet implement interrupts.  There is some disconnect between the structure above and the documented fields below .
 
-The CPU as currently implemented exists as a 
-
-[digital]: https://github.com/hneemann/Digital
-
-Simulation. The ALU is based on 74LS181   
+The CPU as currently implemented exists as a  [digital]: https://github.com/hneemann/Digital Simulation. The ALU is based on 74LS181   
 
 ### Read select codes  
 
@@ -270,4 +266,6 @@ More to follow
 
 Add a final error message report and try clean reported errors currently it can die with out a decent diagnostic message.
 
-Fix syntax to avoid the need for a dangling comma in some syntax structures. 
+- Fix syntax to avoid the need for a dangling comma in some syntax structures. 
+- More options for output formats for example binary, offical intel hex.
+
