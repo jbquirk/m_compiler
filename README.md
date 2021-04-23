@@ -34,23 +34,23 @@ I did this so as I change the instruction set I do not have to completely rebuil
 
 ```c
 struct inst_word {
-				int Sreg_code 	: 4	; //bit 0-3 
-				int Dreg_code	: 4 ; //Bit 4-7
+				int Sreg_code 		: 4	; //bit 0-3 
+				int Dreg_code		: 4 ; //Bit 4-7
 				int W16 		: 1 ; //Bit 8 Saves current address to 16 bit reg 
 				int DBtoALU		: 1	; //Bit 9
 				int ex_alu		: 1	; //Bit 10
 				int inc_pc		: 1	; //Bit 11 now increments selected 16 reg 
 				int sp_func		: 2	; //Bit 12-13 
-				int __sel_msb	: 1 ; //Bit 14  
-				int __sel_lsb	: 1 ; //Bit 15
+				int __sel_msb		: 1 ; //Bit 14  
+				int __sel_lsb		: 1 ; //Bit 15
 				int ldinst		: 1 ; //Bit 16
 				int en_jmp0		: 1 ; //bit 17
 				int ad_mast		: 2	; //bit 18-19
-				int alu_func	: 4 ; //bit 20-23
-				int alu_flags	: 3 ; //Bit 24-26
-				int alu_cntrl	: 3	; //Bit 27-29
+				int alu_func		: 4 ; //bit 20-23
+				int alu_flags		: 3 ; //Bit 24-26
+				int alu_cntrl		: 3	; //Bit 27-29
 				int dec_sp		: 1 ; //Bit 30 Decrements selected register
-				int _AorD    	: 1 ; //Bit 31 // Select A or d register set to ALU
+				int _AorD    		: 1 ; //Bit 31 // Select A or d register set to ALU
 			};
 ```
 
