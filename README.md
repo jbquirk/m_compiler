@@ -5,6 +5,9 @@ This complier is an attempt to make generating the micro code for MyCpu less err
 buggy but does produce correct micro code. I rewrote the assembler and it's much nicer with lots of room to grow.
 The assembler takes the processed output from the micro code compiler to generate the tables for the assembler.
 I did this so as I change the instruction set I do not have to completely rebuilt the assembler.
+This docuement by its nature will reffer to the architecture of the MyCpu as it is the mirco code builder/compiler for this cpu.
+The output is current a very basic hex format the [digital]: https://github.com/hneemann/Digital simulator. 
+
 - [m_compiler](#m-compiler)
   * [_A micro code complier for MyCpu a TTL based 8 bit CPU._](#-a-micro-code-complier-for-mycpu-a-ttl-based-8-bit-cpu-)
     + [The basic syntax](#the-basic-syntax)
@@ -60,7 +63,7 @@ The CPU as currently implemented exists as a
 
 [digital]: https://github.com/hneemann/Digital
 
- Simulation. The ALU is based on 74LS181   
+Simulation. The ALU is based on 74LS181   
 
 ### Read select codes  
 
