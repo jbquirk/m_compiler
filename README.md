@@ -272,6 +272,8 @@ More to follow
 The source code is in very plain console C so I would expect it to compile on any system with current C compiler. 
 
 I have not created a makefile for this project as yet. The .prj file is for the Pelles C complier I used to develop the project with I am moving to plain gcc and MS visual C++ but the code will remain in C. 
+to build with gcc "gcc main.c parser.c -o micro_code_compiler.exe" 
+This should work on windows or linux with GCC installed.
 
 ### Usage   
 
