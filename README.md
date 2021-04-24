@@ -20,9 +20,12 @@ The assembler is at a very basic stage but it has room to grow.
     + [Flags mux for micro code logic](#flags-mux-for-micro-code-logic)
       - [Destination Reg codes](#destination-reg-codes)
     + [Detailed syntax of complier and usage](#detailed-syntax-of-complier-and-usage)
+    + [How to build](#how-to-build)
+    + [Usage](#usage)
       - [TODO](#todo)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 
 ###  The basic syntax    
