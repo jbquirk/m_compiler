@@ -2,10 +2,14 @@
 ## _A micro code complier for MyCpu a TTL based 8 bit CPU._
 
 This complier is an attempt to make generating the micro code for MyCpu less error prone. Along the way I learnt a lot this code is still quite 
-buggy but does produce correct micro code. I rewrote the assembler and it's much nicer with lots of room to grow.
+buggy but does produce correct micro code.   
+The micro-code complier works with the assembler thst has gone though several rewirtes it will publish here soon.   
+
 The assembler takes the processed output from the micro code compiler to generate the tables for the assembler.
+I have a seperate program that generates the tables for the assembler the format for thi is encodded in the comments for each instruction  
+
 I did this so as I change the instruction set I do not have to completely rebuilt the assembler.
-This docuement by its nature will reffer to the architecture of the MyCpu as it is the mirco code builder/compiler for this cpu.
+This document by its nature will reffer to the architecture of the MyCpu as it is the mirco code builder/compiler for this cpu.
 The output is current a very basic hex format the [digital]: https://github.com/hneemann/Digital simulator. 
 I will keep the parts of this project seperate as the assembler and table bulider can be used for other 8 bit processors.
 The assembler is at a very basic stage but it has room to grow.
@@ -262,6 +266,8 @@ The next line is identical except for the "swapAD" code. As with the previous ex
 | "lsb","msb"                              | This is used select the MSB or the LSB of the 16 bit registers and places or reads the value from the data bus. coded as **pc[lsb]**. |      |
 
  
+it is important to note you can't do **"REGA->REGB,REGC->REGD,inc(pc)"** as this make no sense as the code excutes in one clock cycle an the regesiter control lines are only able to access one source and destination at a time via the databus. SO in the design of this micro-code bulider each line of code is one clock cycle.   
+
 
 More to follow  
 
