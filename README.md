@@ -264,6 +264,52 @@ More to follow
 
 
 
+### How to build
+
+The source code is in very plain console C so I would expect it to compile on any system with current C compiler. 
+
+I have not created a makefile for this project as yet. The .prj file is for the Pelles C complier I used to develop the project with I am moving to plain gcc and MS visual C++ but the code will remain in C. 
+
+### Usage   
+
+How to compile micro-code
+
+***micro-code-compiler.exe jump_inst_new.asm***
+
+ This compile the file "jump_inst_new.asm" and display the result as follows
+
+```
+ 1062 op: 0xe1 ; //ADC_DA_(X+) 1 ADC with pointed to by X MEM result in DA
+  1063 :00e1:  :0001080e:*: ram[pc]->instr,inc(pc) ; //basic istruction fetch
+  1064 :01e1:  :00180e0e:*: ram[mar]->acum,alu(adc),swapBT,inc(mar);
+  1065 :02e1:  :801a0e0e:*: ram[mar]->acum,alu(adc),jmp0,swapAD,swapBT,inc(mar);
+  1066 *:end;
+  1067 op: 0xe2 ; //SUB_DA_(X+) 1 SUB with pointed to by X MEM result in DA
+  1068 :00e2:  :0001080e:*: ram[pc]->instr,inc(pc) ; //basic istruction fetch
+  1069 :01e2:  :00280e0e:*: ram[mar]->acum,alu(sub),swapBT,inc(mar);
+  1070 :02e2:  :802a0e0e:*: ram[mar]->acum,alu(sub),jmp0,swapAD,swapBT,inc(mar);
+  1071 *:end;
+  1072 op: 0xe3 ; //SBC_DA_(X+) 1 SBC with pointed to by X MEM result in DA
+  1073 :00e3:  :0001080e:*: ram[pc]->instr,inc(pc) ; //basic istruction fetch
+  1074 :01e3:  :00380e0e:*: ram[mar]->acum,alu(sbc),swapBT,inc(mar);
+  1075 :02e3:  :803a0e0e:*: ram[mar]->acum,alu(sbc),jmp0,swapAD,swapBT,inc(mar);
+  1076 *:end;
+  1077 op: 0xe4 ; //AND_DA_(X+) 1 AND with pointed to by X MEM result in DA
+  1078 :00e4:  :0001080e:*: ram[pc]->instr,inc(pc) ; //basic istruction fetch
+  1079 :01e4:  :00480e0e:*: ram[mar]->acum,alu(and),swapBT,inc(mar);
+  1080 :02e4:  :804a0e0e:*: ram[mar]->acum,alu(and),jmp0,swapAD,swapBT,inc(mar);
+  1081 *:end;
+  1082 op: 0xe5 ; //OR_DA_(X+) 1 or with pointed to by X MEM result in DA
+  1083 :00e5:  :0001080e:*: ram[pc]->instr,inc(pc) ; //basic istruction fetch
+  1084 :01e5:  :00680e0e:*: ram[mar]->acum,alu(or),swapBT,inc(mar);
+  1085 :02e5:  :806a0e0e:*: ram[mar]->acum,alu(or),jmp0,swapAD,swapBT,inc(mar);
+  1086 *:end;
+```
+
+The resultant hex file is place in a.out. It is fact a text file so you can view see todo for furture plans on format.
+
+
+
 #### TODO
 
 Add a final error message report and try clean reported errors currently it can die with out a decent diagnostic message.
