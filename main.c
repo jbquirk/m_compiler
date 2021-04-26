@@ -48,7 +48,7 @@ void cleanup(void); //
 void clear_inst( void);
 void dumpHex(void);
 void initHex(void);
-long line_cnt = 0; // keep track of line number processing
+long line_cnt; // keep track of line number processing
 
 /****************************************************************************
  *                                                                          *
@@ -60,6 +60,7 @@ long line_cnt = 0; // keep track of line number processing
  *           00/00/00  Created                                              *
  *                                                                          *
  ****************************************************************************/
+line_cnt =0;
 
 int main(int argc, char *argv[])
 {

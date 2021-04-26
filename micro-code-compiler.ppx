@@ -13,26 +13,26 @@
 	</category>
 	<category name="micro-code-compiler.h">
 		<category name="Window">
-			<property name="Left" type="integer">183</property>
-			<property name="Top" type="integer">183</property>
-			<property name="Right" type="integer">2599</property>
-			<property name="Bottom" type="integer">1372</property>
+			<property name="Left" type="integer">0</property>
+			<property name="Top" type="integer">0</property>
+			<property name="Right" type="integer">2880</property>
+			<property name="Bottom" type="integer">1189</property>
 			<property name="Maximized" type="integer">0</property>
 			<property name="Active" type="integer">0</property>
 		</category>
 	</category>
 	<category name="main.c">
 		<category name="Window">
-			<property name="Left" type="integer">244</property>
-			<property name="Top" type="integer">244</property>
-			<property name="Right" type="integer">2660</property>
-			<property name="Bottom" type="integer">1433</property>
+			<property name="Left" type="integer">61</property>
+			<property name="Top" type="integer">61</property>
+			<property name="Right" type="integer">2941</property>
+			<property name="Bottom" type="integer">1250</property>
 			<property name="Maximized" type="integer">0</property>
 			<property name="Active" type="integer">0</property>
 		</category>
 		<category name="Breakpoints">
 			<category name="Breakpoint1">
-				<property name="Line" type="integer">353</property>
+				<property name="Line" type="integer">354</property>
 				<property name="Enabled" type="integer">0</property>
 				<property name="HitCount" type="integer">0</property>
 				<property name="Expression" type="string"></property>
@@ -41,10 +41,10 @@
 	</category>
 	<category name="parser.c">
 		<category name="Window">
-			<property name="Left" type="integer">305</property>
-			<property name="Top" type="integer">305</property>
-			<property name="Right" type="integer">2721</property>
-			<property name="Bottom" type="integer">1494</property>
+			<property name="Left" type="integer">122</property>
+			<property name="Top" type="integer">122</property>
+			<property name="Right" type="integer">3002</property>
+			<property name="Bottom" type="integer">1311</property>
 			<property name="Maximized" type="integer">0</property>
 			<property name="Active" type="integer">0</property>
 		</category>
